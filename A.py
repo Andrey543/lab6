@@ -1,10 +1,13 @@
-n=int(input())
-a=input().split()
+input=open('input.txt','r')
+output=open('output.txt','w')
+n=int(input.readline().rstrip())
+a=input.readline().rstrip() 
 f=True
 i=0
 while f:
-    if a[i+1:].count(a[i])>0:
+    if a.find(a[i],i+1)!=-1:
         f=False
-        print(a[i])
-    i+=1
+        print(a[i],file=output)
+    i+=2
+
 
