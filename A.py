@@ -4,7 +4,7 @@ n=int(input.readline().rstrip())
 f=True
 i=0
 a = list(map(int,input.readline().split()))
-a.sort()
+sorted(a)
 while f:
     if a[i]==a[i+1]:
         f=False
