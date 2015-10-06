@@ -4,9 +4,7 @@ n=int(input.readline().rstrip())
 f=True
 i=1
 a = list(map(int,input.readline().split()))
-print(a)
 a=sorted(a)
-print(a)
 while f:
     print(i,a[i-1],a[i])
     if a[i]==a[i-1]:
