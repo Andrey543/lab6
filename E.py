@@ -12,3 +12,4 @@ for i in range(k):
     d[int(a[1])-1]+=int(a[2])
 for i in range(n):
     print(d[i],end=' ',file=output)
+
